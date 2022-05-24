@@ -77,6 +77,7 @@ jobs:
       - run:
           name: Publish package
           command: |
+            mvn deploy
             rm -f ~/version.txt
 
 workflows:
@@ -92,7 +93,7 @@ workflows:
       - pack:
           requires:
             - validate
-#            - check-package-version
+            - check-package-version
       - build:
           requires:
             - pack
