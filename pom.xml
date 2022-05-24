@@ -4,7 +4,7 @@
 
     <groupId>com.skynet.framework.java</groupId>
     <artifactId>skynet-framework-java</artifactId>
-    <version>1.0.101</version>
+    <version>1.0.102</version>
 <!--    <packaging>jar</packaging>-->
 
     <distributionManagement>
