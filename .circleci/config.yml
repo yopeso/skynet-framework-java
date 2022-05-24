@@ -77,7 +77,7 @@ jobs:
       - run:
           name: Publish package
           command: |
-            mvn deploy
+            mvn -s .circleci/settings.xml deploy
             rm -f ~/version.txt
 
 workflows:

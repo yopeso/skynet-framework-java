@@ -5,7 +5,7 @@ git config user.name "leonardmustatea"
 git config user.email "leonard.mustatea@gmail.com"
 git checkout main
 
-latest_release=$(mvn -q \
+latest_release=$(mvn mvn -s .circleci/settings.xml -q \
                       -Dexec.executable="echo" -Dexec.args='${project.version}' \
                       --non-recursive org.codehaus.mojo:exec-maven-plugin:1.3.1:exec)
 
